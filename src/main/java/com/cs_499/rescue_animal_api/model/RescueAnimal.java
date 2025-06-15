@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Entity
-@Table(name = "rescue_animals") // Base table for common fields
-@Inheritance(strategy = InheritanceType.JOINED) // Key annotation for joined strategy
+@Table(name = "rescue_animals") // Base table for parent fields
+@Inheritance(strategy = InheritanceType.JOINED) // Using joined strategy
 public abstract class RescueAnimal {
 
     @Id
